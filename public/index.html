@@ -5,7 +5,7 @@
     <title>Events List</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <script src="https://npmcdn.com/react@15.3.0/dist/react.js"></script>
     <script src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.js"></script>
     <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
@@ -51,14 +51,16 @@
     <script type="text/babel" src="scripts/UserEventsRowHeader.js"></script>
     <script type="text/babel" src="scripts/Loading.js"></script>
     <script type="text/babel" src="scripts/RefreshBtn.js"></script>
+    <script type="text/babel" src="scripts/SummaryTable.js"></script>
 
     <script type="text/babel">
 
     /*
       Rendering main component
+      https://app-staging.sysdigcloud.com/api/events
     */
     ReactDOM.render(
-      <UserEvents source="https://app-staging.sysdigcloud.com/api/events" />,
+      <UserEvents source="test.json" />,
       document.getElementById('content')
     );
 
